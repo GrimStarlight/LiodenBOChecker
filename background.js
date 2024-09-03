@@ -28,7 +28,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             console.log("Skin Colors:", request.skinColors);  // Log skin colors
             console.log("Markings:", request.markings);
         } else {
-            console.log("No BO Traits Found: May not be updated with newest traits!");
+            console.log("No valuable Traits Found: May not be updated with newest traits!");
         }
 
         // Send the data to the popup

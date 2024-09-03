@@ -12,7 +12,7 @@ document.getElementById('searchButton').addEventListener('click', () => {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.type === 'updatePopup') {
         const resultsDiv = document.getElementById('results');
-        resultsDiv.innerHTML = `<p>Total Traits Found: ${request.totalTraitsFound}</p>`;
+        resultsDiv.innerHTML = `<p>Valuable Traits Found: ${request.totalTraitsFound}</p>`;
 
         if (request.noTraitsFoundMessage) {
             resultsDiv.innerHTML += `<p>${request.noTraitsFoundMessage}</p>`;
